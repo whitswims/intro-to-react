@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>My First React App</title>
   </head>
 
@@ -12,18 +15,28 @@
     
     <script type="text/babel">
         class Greeting extends React.Component {
+          constructor(props) {
+          super(props);
+          this.state = {
+            name: "Start"
+            };
+          }
          render() {
            return (
              <div>
                 <h1>Hello {this.props.name}!</h1>
+                <h3>State is now: {this.state.name}</h3>
              </div>
            );
          }
        }
- 
+
        ReactDOM.render(
-        <Greeting name="Bloc Student"/>, document.getElementById('app')
+        <Greeting name="Bloc Student"/>,
+         document.getElementById('app')
        );
+
+
     </script>
   </body>
 </html>
