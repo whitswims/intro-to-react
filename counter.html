@@ -9,7 +9,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
     <script type="text/babel">
 
@@ -39,7 +39,7 @@
             <div>
               <img src={this.props.image} alt="Bloc Logo"/>
               <h2>Current program: {this.props.label}</h2>
-              <h3>Current week: {this.state.number}></h3>
+              <h3>Current week: {this.state.number}</h3>
                 <button onClick={this.increment.bind(this)}>Increment</button>
                 <button onClick={this.decrement.bind(this)}>Decrement</button>
               <p>Current Date: {this.props.date.toLocaleDateString()}</p>
@@ -60,7 +60,7 @@
       ReactDOM.render(
         <Counter
           date={info.date}
-          image={info.image}/>,document.getElementById('app')
+          image={info.image}/>, document.getElementById('app')
       );
 
     </script>
